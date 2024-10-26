@@ -10,7 +10,6 @@
 
 <h3>Pré-requisitos</h3>
 
-[Git](https://git-scm.com/) </br>
 Extensão live server do Visual Studio.
 
 <h3>Clonando</h3>
