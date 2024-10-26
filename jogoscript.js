@@ -1,23 +1,23 @@
 var vidas = 3;
 var altura = 0;
 var largura = 0;
-var tempo = 60; // Tempo inicial em segundos
+var tempo = 60; 
 var criaMosquitoTempo = 1500;
 
 var cronometro;
 var criaMosquito;
 
-// Variável global para o objeto de áudio
+
 var backgroundMusic;
 
-// Função para inicializar o áudio
+
 function initAudio() {
-    backgroundMusic = new Audio('videoplayback.m4a'); // Substitua pelo caminho do seu arquivo de áudio
-    backgroundMusic.loop = true; // Faz a música tocar em loop
-    backgroundMusic.volume = 0.1; // Define o volume (0.0 a 1.0)
+    backgroundMusic = new Audio('videoplayback.m4a'); 
+    backgroundMusic.loop = true; 
+    backgroundMusic.volume = 0.1; 
 }
 
-// Função para alternar entre tocar e pausar o áudio
+
 function toggleAudio() {
     if (!backgroundMusic) {
         initAudio();
@@ -121,8 +121,8 @@ function iniciarJogo(dificuldade) {
 
     criaMosquito = setInterval(posicaoRandomica, criaMosquitoTempo);
     
-    initAudio(); // Inicializa o áudio
-    toggleAudio(); // Começa a tocar a música
+    initAudio(); 
+    toggleAudio(); 
 }
 
 function mostrarVitoria() {
