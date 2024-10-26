@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo do Mosquito</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onresize="ajustaTamanho()">
+    <div id="menu" class="menu">
+        <img src="imagens/game.png" alt="Logo do Jogo" class="logo">
+        <h2>Selecione o nível de dificuldade:</h2>
+        <button onclick="iniciarJogo('facil')">Fácil</button>
+        <button onclick="iniciarJogo('medio')">Médio</button>
+        <button onclick="iniciarJogo('dificil')">Difícil</button>
+    </div>
+    <div id="jogo" class="jogo" style="display: none;">
+        <div class="painel">
+            <div class="vida">
+                <img id="v3" src="imagens/coracao_cheio.png" alt="Vida">
+                <img id="v2" src="imagens/coracao_cheio.png" alt="Vida">
+                <img id="v1" src="imagens/coracao_cheio.png" alt="Vida">
+            </div>
+            <div class="cronometro">Tempo: <span id="cronometro">60</span></div>
+        </div>
+        <button id="audioControl" onclick="toggleAudio()">🔇</button>
+    </div>
+    
+    <script src="jogoscript.js"></script>
+</body>
+</html>
