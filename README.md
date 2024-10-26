@@ -1,4 +1,4 @@
-# desafio-dti
+# Jogo do mosquito/mosca.
 <h1 align="center" style="font-weight: bold;">Jogo do mosquito</h1>
 
 <p align="center">
